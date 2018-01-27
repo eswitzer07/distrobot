@@ -51,7 +51,10 @@ async def on_message (message):
         await client.send_message(message.author,givenKey[0])
         
         client.delete_message(discord.Object(givenKey[1]))
-      
+    
+    elif message.content.startswith("!fuck"):
+        print ("Suck My Dick")
+    
 client.run(os.getenv('TOKEN'))
 
 #discord.on_member_join(member)
