@@ -50,7 +50,7 @@ async def on_message (message):
         print(givenKey[1])
         await client.send_message(message.author,givenKey[0])
         
-        client.delete_message(discord.Object(givenKey[1]))
+        client.delete_message(discord.Object('406844870876069901'))
     
     elif message.content.startswith("!fuck"):
         print ("Suck My Dick")
